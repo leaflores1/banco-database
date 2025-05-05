@@ -1,0 +1,21 @@
+# Entorno virtual
+env/
+
+# Credenciales
+.env
+
+# Archivos temporales
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Configuraciones de VSCode
+.vscode/
+
+# Jupyter notebooks outputs (si es muy pesado)
+.ipynb_checkpoints/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
