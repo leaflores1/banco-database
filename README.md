@@ -46,18 +46,13 @@
 
 ## 📈 Próximos pasos
 
-- Análisis de datos con Pandas y Jupyter.
+- Análisis de datos con Pandas y Jupyter. (hecho)
 - Exportación de transacciones a CSV.
 - Integración con Azure para simular pipelines reales.
 - Enriquecimiento y limpieza de datos con PySpark en Databricks.
 
 ---
 
-## 🧠 Inspiración
-
-Este proyecto acompaña el desarrollo académico dentro de la **Diplomatura Universitaria en Data Engineering** (ICARO - UNC), integrando todos los contenidos técnicos de manera progresiva y práctica.
-
----
 
 ## 📁 Estructura del proyecto
 
@@ -68,3 +63,6 @@ bancoIcaro/
 ├── .env # Variables de entorno (no versionado)
 ├── requirements.txt # Dependencias
 └── README.md
+
+# activar entorno
+.\env\Scripts\activate
