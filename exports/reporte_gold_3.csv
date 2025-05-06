@@ -1,0 +1,3 @@
+origen,año,mes,cantidad_op_egreso,cantidad_op_ingreso,total_monto_egreso,total_monto_ingreso,saldo_neto
+0001-000001,2025,5,0.0,1.0,0.0,300.0,300.0
+0001-707476,2025,5,1.0,0.0,1000.0,0.0,-1000.0

@@ -40,4 +40,4 @@ def hacer_transferencia(cuenta_origen_id, cuenta_destino_id, monto):
 
 # Ejemplo de uso
 if __name__ == "__main__":
-    hacer_transferencia(cuenta_origen_id=1, cuenta_destino_id=2, monto=300.00)
+    hacer_transferencia(cuenta_origen_id=1, cuenta_destino_id=3, monto=300.00)

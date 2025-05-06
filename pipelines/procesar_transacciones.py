@@ -2,8 +2,8 @@ import pandas as pd
 import os
 
 def procesar_transacciones():
-    ruta_entrada = "exports/transacciones_todas.csv"
-    ruta_salida = "exports/transacciones_limpias.csv"
+    ruta_entrada = "exports/transacciones_cuenta_3.csv"
+    ruta_salida = "exports/transacciones_limpias_3.csv"
 
     if not os.path.exists(ruta_entrada):
         print(f"❌ Archivo no encontrado: {ruta_entrada}")

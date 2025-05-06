@@ -22,5 +22,5 @@ def insertar_cliente(nombre, apellido, dni, direccion, telefono, email):
 # Ejemplo de uso
 if __name__ == "__main__":
     insertar_cliente(
-        "Juan", "Pérez", "45678901", "Av. Siempre Viva 742", "2617894561", "juan@mail.com"
+        "Test1", "Uno", "55555555", "Av. Nunca Viva 444", "2617889561", "test1@mail.com"
     )

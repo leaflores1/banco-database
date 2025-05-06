@@ -1,0 +1,4 @@
+id,tipo,monto,fecha,origen,destino,año,mes,movimiento
+8,Transferencia,300.0,2025-05-06 19:50:13,0001-000001,0001-707476,2025,5,Ingreso
+9,Depósito,90000.0,2025-05-06 19:51:05,N/A,0001-707476,2025,5,Ingreso
+10,Extracción,1000.0,2025-05-06 19:51:36,0001-707476,N/A,2025,5,Egreso
