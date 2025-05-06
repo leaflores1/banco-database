@@ -1,51 +1,52 @@
 # 🏦 Banco ICARO – Proyecto de Ingeniería de Datos
 
-**Banco ICARO** es un proyecto en desarrollo que simula un sistema bancario real y evoluciona progresivamente hacia una solución completa de **Ingeniería de Datos**. Comienza con una base de datos relacional y operaciones básicas implementadas en Python, y está diseñado para escalar con herramientas modernas del ecosistema Data Engineering.
+**Banco ICARO** es un sistema bancario educativo y progresivo que simula operaciones reales de una entidad financiera, combinando desarrollo backend con análisis de datos. Comienza con una base relacional y crece hacia una arquitectura moderna de procesamiento de datos, integrando los contenidos de la **Diplomatura Universitaria en Data Engineering (ICARO - UNC)**.
+
+---
 
 ## 🎯 Objetivos
 
-- Modelar entidades bancarias como clientes, cuentas y transacciones.
-- Automatizar operaciones como transferencias y depósitos desde backend en Python.
-- Registrar, consultar y analizar transacciones financieras.
-- Escalar hacia arquitectura de procesamiento de datos moderna: ETL, nube y análisis con PySpark.
+- Modelar entidades como clientes, cuentas y transacciones en una base MySQL.
+- Automatizar operaciones bancarias básicas en Python (depósitos, extracciones, transferencias).
+- Incorporar lógica de validación y trazabilidad de movimientos financieros.
+- Analizar datos reales con Pandas y proyectar integración futura con herramientas Big Data.
 
 ---
 
 ## 🧰 Tecnologías utilizadas
 
 ### 🗄️ **Base de datos**
-- **MySQL** – Sistema de gestión relacional para almacenar los datos bancarios.
+- **MySQL** – Motor relacional con vistas, procedimientos y llaves foráneas.
 
-### 🐍 **Backend y scripts**
-- **Python 3.11**
-- `mysql-connector-python` – Conexión a base de datos.
-- `pandas` – Exploración y análisis de datos.
-- `dotenv` – Manejo de variables de entorno seguras.
+### 🐍 **Backend en Python**
+- `mysql-connector-python` – Conector de Python a MySQL
+- `pandas` – Análisis y manipulación de datos
+- `python-dotenv` – Variables de entorno seguras
+- Scripts interactivos tipo CLI
 
-### 📦 **Organización de código**
-- Estructura modular con carpetas `db/`, `scripts/` y `notebooks/`.
-- Separación clara entre lógica de conexión, operaciones y análisis.
-
-### 🧪 **(Fase futura)**
-- **Jupyter Notebooks** – Para análisis de transacciones y visualizaciones.
-- **MongoDB** – Almacenamiento NoSQL para logs o auditoría.
-- **Azure Data Factory** – Ingesta y orquestación de datos desde múltiples fuentes.
-- **Databricks + PySpark** – Procesamiento distribuido y creación de Delta Tables.
-- **Arquitectura Medallion** – Organización eficiente de datos en capas Bronce, Silver y Gold.
+### 📦 **Estructura del proyecto**
+- `db/` – Conexión a la base de datos
+- `scripts/` – Scripts interactivos (crear clientes, cuentas, transferencias, login, cajero)
+- `notebooks/` – Análisis exploratorios (en progreso)
+- `sql/` – Archivos separados por responsabilidad (`schema.sql`, `views.sql`, `data.sql`)
+- `.env` – Configuración segura de credenciales
 
 ---
 
 ## 🔄 Funcionalidades actuales
 
-- Crear clientes y cuentas desde scripts en Python.
-- Realizar transferencias con validación de saldo.
-- Consultar el historial de transacciones por cuenta.
-- Conexión directa con MySQL usando `.env` para seguridad.
+- ✅ Crear clientes y cuentas bancarias
+- ✅ Validar usuarios con login (DNI + email)
+- ✅ Depositar, extraer y transferir dinero entre cuentas
+- ✅ Ver historial de transacciones por cuenta
+- ✅ Menú interactivo tipo *cajero automático* para operar en consola
+- ✅ Análisis de transacciones reales con Pandas en notebooks
 
 ---
 
-## 📈 Próximos pasos
+## 🧪 Análisis de datos
 
+<<<<<<< HEAD
 - Análisis de datos con Pandas y Jupyter. (hecho)
 - Exportación de transacciones a CSV.
 - Integración con Azure para simular pipelines reales.
@@ -53,16 +54,47 @@
 
 ---
 
+=======
+- Conexión desde Jupyter Notebook
+- Extracción de transacciones en DataFrame
+- Agrupamiento por tipo de operación
+- Visualización de saldos y actividad
+
+---
+
+## 🚧 Próximos pasos
+
+- Exportar extractos y reportes a CSV
+- Implementar módulo de auditoría con MongoDB
+- Orquestar carga y transformación de datos con Azure Data Factory
+- Aplicar limpieza y enriquecimiento de datos con PySpark en Databricks
+- Diseñar un esquema medallion con capas Bronce, Silver y Gold
+
+---
+>>>>>>> d3bf07603696fa2940d6d4075a4b1330de02b4cc
 
 ## 📁 Estructura del proyecto
 
 bancoIcaro/
-├── db/ # Lógica de conexión a la base de datos
-├── scripts/ # Scripts para operaciones (insertar, transferir, consultar)
-├── notebooks/ # Análisis exploratorios con Pandas (próximo paso)
+├── db/ # Conexión y configuración de base de datos
+├── scripts/ # Scripts funcionales de backend bancario
+├── auth/ # Módulo de login de clientes
+├── notebooks/ # Notebooks de análisis con Pandas
+├── sql/ # Scripts SQL para schema, vistas, inserts y queries
 ├── .env # Variables de entorno (no versionado)
-├── requirements.txt # Dependencias
+├── requirements.txt # Dependencias del proyecto
 └── README.md
 
+<<<<<<< HEAD
 # activar entorno
 .\env\Scripts\activate
+=======
+## 📎 Requisitos
+
+- Python 3.11
+- MySQL Server (Workbench o DBeaver)
+- Entorno virtual (`python -m venv env`)
+- Instalar dependencias:
+  ```bash
+  pip install -r requirements.txt
+>>>>>>> d3bf07603696fa2940d6d4075a4b1330de02b4cc
